@@ -1,0 +1,18 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-1000,-855",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port clk_100mhz -pg 1 -lvl 0 -x -320 -y -450 -defaultsOSRD
+preplace inst angle_encoder_0 -pg 1 -lvl 3 -x 210 -y -450 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -190 -y -430 -defaultsOSRD
+preplace inst RotaryEnc_0 -pg 1 -lvl 2 -x 0 -y -470 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 1 1 -80 -450n
+preplace netloc clk_100mhz_1 1 0 1 -300J -450n
+levelinfo -pg 1 -320 -190 0 210 320
+pagesize -pg 1 -db -bbox -sgen -450 -930 320 140
+"
+}
+

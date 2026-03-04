@@ -1,0 +1,132 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x773A4D7AC7DB6C54",
+      "device": "xczu3eg-sfvc784-2-e",
+      "gen_directory": "../../../../Ucisw2.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.2"
+    },
+    "design_tree": {
+      "angle_encoder_0": "",
+      "clk_wiz_0": "",
+      "RotaryEnc_0": ""
+    },
+    "interface_ports": {
+      "clk_100mhz": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        },
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "CLK_N": {
+            "physical_name": "clk_100mhz_clk_n",
+            "direction": "I"
+          },
+          "CLK_P": {
+            "physical_name": "clk_100mhz_clk_p",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "components": {
+      "angle_encoder_0": {
+        "vlnv": "xilinx.com:module_ref:angle_encoder:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_angle_encoder_0_0",
+        "xci_path": "ip\\design_1_angle_encoder_0_0\\design_1_angle_encoder_0_0.xci",
+        "inst_hier_path": "angle_encoder_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "angle_encoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "ROT_L": {
+            "direction": "I"
+          },
+          "ROT_R": {
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              }
+            }
+          },
+          "ANG": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "17",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "clk_100mhz"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "RotaryEnc_0": {
+        "vlnv": "JS_WUST:UCiSW:RotaryEnc:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_RotaryEnc_0_0",
+        "xci_path": "ip\\design_1_RotaryEnc_0_0\\design_1_RotaryEnc_0_0.xci",
+        "inst_hier_path": "RotaryEnc_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "interface_nets": {
+      "clk_100mhz_1": {
+        "interface_ports": [
+          "clk_100mhz",
+          "clk_wiz_0/CLK_IN1_D"
+        ]
+      }
+    },
+    "nets": {
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "RotaryEnc_0/Clk"
+        ]
+      }
+    }
+  }
+}
