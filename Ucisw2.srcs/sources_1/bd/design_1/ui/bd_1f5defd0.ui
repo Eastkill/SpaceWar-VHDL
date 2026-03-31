@@ -1,18 +1,75 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-1000,-855",
+   "Default View_ScaleFactor":"0.96614",
+   "Default View_TopLeft":"-14,-51",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port clk_100mhz -pg 1 -lvl 0 -x -320 -y -450 -defaultsOSRD
-preplace inst angle_encoder_0 -pg 1 -lvl 3 -x 210 -y -450 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -190 -y -430 -defaultsOSRD
-preplace inst RotaryEnc_0 -pg 1 -lvl 2 -x 0 -y -470 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 1 1 -80 -450n
-preplace netloc clk_100mhz_1 1 0 1 -300J -450n
-levelinfo -pg 1 -320 -190 0 210 320
-pagesize -pg 1 -db -bbox -sgen -450 -930 320 140
+preplace port clk_100mhz -pg 1 -lvl 0 -x -40 -y 210 -defaultsOSRD
+preplace port port-id_ROT_A -pg 1 -lvl 0 -x -40 -y 730 -defaultsOSRD
+preplace port port-id_ROT_B -pg 1 -lvl 0 -x -40 -y 750 -defaultsOSRD
+preplace port port-id_PL_USER_PB3 -pg 1 -lvl 0 -x -40 -y 510 -defaultsOSRD
+preplace port port-id_PL_USER_SW0 -pg 1 -lvl 0 -x -40 -y 590 -defaultsOSRD
+preplace port port-id_PL_USER_SW1 -pg 1 -lvl 0 -x -40 -y 610 -defaultsOSRD
+preplace port port-id_PL_USER_SW2 -pg 1 -lvl 0 -x -40 -y 630 -defaultsOSRD
+preplace port port-id_PL_USER_SW3 -pg 1 -lvl 0 -x -40 -y 650 -defaultsOSRD
+preplace port port-id_PL_USER_SW4 -pg 1 -lvl 0 -x -40 -y 670 -defaultsOSRD
+preplace port port-id_PL_USER_SW5 -pg 1 -lvl 0 -x -40 -y 830 -defaultsOSRD
+preplace port port-id_PL_USER_SW6 -pg 1 -lvl 0 -x -40 -y 850 -defaultsOSRD
+preplace port port-id_PL_USER_SW7 -pg 1 -lvl 0 -x -40 -y 870 -defaultsOSRD
+preplace port port-id_HDMI_DO_P -pg 1 -lvl 6 -x 1270 -y 110 -defaultsOSRD
+preplace port port-id_HDMI_DO_N -pg 1 -lvl 6 -x 1270 -y 130 -defaultsOSRD
+preplace port port-id_HDMI_D1_P -pg 1 -lvl 6 -x 1270 -y 150 -defaultsOSRD
+preplace port port-id_HDMI_D1_N -pg 1 -lvl 6 -x 1270 -y 170 -defaultsOSRD
+preplace port port-id_HDMI_D2_P -pg 1 -lvl 6 -x 1270 -y 190 -defaultsOSRD
+preplace port port-id_HDMI_D2_N -pg 1 -lvl 6 -x 1270 -y 210 -defaultsOSRD
+preplace port port-id_HDMI_CK_P -pg 1 -lvl 6 -x 1270 -y 230 -defaultsOSRD
+preplace port port-id_HDMI_CK_N -pg 1 -lvl 6 -x 1270 -y 250 -defaultsOSRD
+preplace portBus PL_USER_LED -pg 1 -lvl 6 -x 1270 -y 660 -defaultsOSRD
+preplace inst angle_encoder_0 -pg 1 -lvl 3 -x 590 -y 500 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 90 -y 210 -defaultsOSRD
+preplace inst RotaryEnc_0 -pg 1 -lvl 2 -x 330 -y 750 -defaultsOSRD
+preplace inst switches_to_byte_0 -pg 1 -lvl 5 -x 1140 -y 660 -defaultsOSRD
+preplace inst HDMI_TX_0 -pg 1 -lvl 5 -x 1140 -y 180 -defaultsOSRD
+preplace inst VideoTiming_0 -pg 1 -lvl 3 -x 590 -y 100 -defaultsOSRD
+preplace inst DisplayGen_0 -pg 1 -lvl 4 -x 870 -y 320 -defaultsOSRD
+preplace netloc DisplayGen_0_B 1 4 1 1030 260n
+preplace netloc DisplayGen_0_G 1 4 1 1010 240n
+preplace netloc DisplayGen_0_R 1 4 1 1000 220n
+preplace netloc HDMI_TX_0_HDMI_CK_N 1 5 1 NJ 250
+preplace netloc HDMI_TX_0_HDMI_CK_P 1 5 1 NJ 230
+preplace netloc HDMI_TX_0_HDMI_D0_N 1 5 1 NJ 130
+preplace netloc HDMI_TX_0_HDMI_D0_P 1 5 1 NJ 110
+preplace netloc HDMI_TX_0_HDMI_D1_N 1 5 1 NJ 170
+preplace netloc HDMI_TX_0_HDMI_D1_P 1 5 1 NJ 150
+preplace netloc HDMI_TX_0_HDMI_D2_N 1 5 1 NJ 210
+preplace netloc HDMI_TX_0_HDMI_D2_P 1 5 1 NJ 190
+preplace netloc PL_USER_PB3_1 1 0 3 NJ 510 NJ 510 NJ
+preplace netloc PL_USER_SW0_1 1 0 5 NJ 590 NJ 590 NJ 590 NJ 590 NJ
+preplace netloc PL_USER_SW1_1 1 0 5 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc PL_USER_SW2_1 1 0 5 NJ 630 NJ 630 NJ 630 NJ 630 NJ
+preplace netloc PL_USER_SW3_1 1 0 5 NJ 650 NJ 650 NJ 650 NJ 650 NJ
+preplace netloc PL_USER_SW4_1 1 0 5 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc PL_USER_SW5_1 1 0 5 NJ 830 NJ 830 NJ 830 NJ 830 1000J
+preplace netloc PL_USER_SW6_1 1 0 5 NJ 850 NJ 850 430J 710 NJ 710 NJ
+preplace netloc PL_USER_SW7_1 1 0 5 NJ 870 NJ 870 440J 730 NJ 730 NJ
+preplace netloc ROT_A_1 1 0 2 NJ 730 NJ
+preplace netloc ROT_B_1 1 0 2 NJ 750 NJ
+preplace netloc RotaryEnc_0_RotL 1 2 1 410 470n
+preplace netloc RotaryEnc_0_RotR 1 2 1 420 490n
+preplace netloc VideoTiming_0_DE 1 3 2 NJ 60 1030
+preplace netloc VideoTiming_0_HSync 1 3 2 NJ 80 1020
+preplace netloc VideoTiming_0_PosX 1 3 1 710 120n
+preplace netloc VideoTiming_0_PosY 1 3 1 700 140n
+preplace netloc VideoTiming_0_VSync 1 3 2 N 100 1000J
+preplace netloc angle_encoder_0_ANG 1 3 1 740 350n
+preplace netloc clk_wiz_0_clk_out1 1 1 4 240 190 470 220 730 110 1010J
+preplace netloc clk_wiz_0_clk_out2 1 1 4 NJ 210 NJ 210 720J 120 N
+preplace netloc clk_wiz_0_locked 1 1 4 250J 200 480 200 740 140 NJ
+preplace netloc switches_to_byte_0_DATA 1 5 1 NJ 660
+preplace netloc clk_100mhz_1 1 0 1 NJ 210
+levelinfo -pg 1 -40 90 330 590 870 1140 1270
+pagesize -pg 1 -db -bbox -sgen -200 0 1450 890
 "
 }
-
+0
