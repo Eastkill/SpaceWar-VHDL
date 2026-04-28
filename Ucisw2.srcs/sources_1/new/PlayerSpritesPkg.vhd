@@ -73,30 +73,11 @@ package PlayerSpritesPkg is
         x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF"
     );
     
-    constant SHIP_ANGLE_1 : sprite_rom_type := (
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"92", x"49", x"49", x"49", x"49", x"49", x"49", x"92", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"7B", x"74", x"74", x"7B", x"49", x"92", x"D9", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"92", x"49", x"49", x"00", x"74", x"74", x"00", x"49", x"49", x"92", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"92", x"49", x"49", x"74", x"7B", x"7B", x"74", x"49", x"49", x"92", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"7B", x"7B", x"7B", x"7B", x"49", x"92", x"D9", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"92", x"49", x"49", x"49", x"49", x"49", x"49", x"92", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"D9", x"92", x"92", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"D9", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF"
-    );
-    
     constant SHIP_ANGLE_2 : sprite_rom_type := (
         x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"FF", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"49", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"D9", x"49", x"49", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"92", x"49", x"49", x"49", x"49", x"49", x"49", x"92", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"74", x"74", x"7B", x"7B", x"49", x"92", x"D9", x"FF", x"FF", x"FF", 
@@ -111,23 +92,23 @@ package PlayerSpritesPkg is
         x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF"
     );
     
-    constant SHIP_ANGLE_3 : sprite_rom_type := (
+    constant SHIP_ANGLE_1 : sprite_rom_type := (
         x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"D9", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"92", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"FF", x"FF", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"FF", x"D9", x"49", x"49", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"92", x"49", x"49", x"49", x"49", x"49", x"49", x"92", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"74", x"74", x"7B", x"7B", x"49", x"92", x"D9", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"92", x"49", x"49", x"74", x"74", x"00", x"74", x"49", x"49", x"92", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"92", x"49", x"49", x"7B", x"00", x"7B", x"7B", x"49", x"49", x"92", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"7B", x"74", x"7B", x"7B", x"49", x"92", x"D9", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"7B", x"74", x"74", x"7B", x"49", x"92", x"D9", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"92", x"49", x"49", x"00", x"74", x"74", x"00", x"49", x"49", x"92", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"92", x"49", x"49", x"74", x"7B", x"7B", x"74", x"49", x"49", x"92", x"FF", x"FF", x"FF", 
+        x"FF", x"FF", x"FF", x"D9", x"92", x"49", x"7B", x"7B", x"7B", x"7B", x"49", x"92", x"D9", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"92", x"49", x"49", x"49", x"49", x"49", x"49", x"92", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"D9", x"92", x"92", x"49", x"49", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"D9", x"92", x"92", x"D9", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
         x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", 
-        x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF"
+        x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF", x"FF"
     );
     
     constant BULLET : sprite_rom_type := (
